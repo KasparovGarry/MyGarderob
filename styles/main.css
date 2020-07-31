@@ -247,7 +247,7 @@ main {
 	object-fit: cover;
 }
 
-.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+#mainSlideshow .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
     width: 350px;
     height: 467px;
 	object-fit: cover;
@@ -402,7 +402,7 @@ main {
 
 .minus {
   height: 25px;
-  fill: red;
+  fill: #ff0000;
   margin-right: 4px;
 }
 
@@ -453,6 +453,13 @@ main {
 	fill: gray;
 }
 
+#trendsSlideshow .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+	height: 80vh;
+	object-fit: cover;
+	background-position: center;
+	object-position: 0 -7px;
+}
+
 .p8 .h1 p {
 	text-align: center;
 	margin-bottom: 60px;
@@ -460,21 +467,6 @@ main {
 
 .p8 .row {
 	margin-bottom: 15px;
-}
-
-.p8 .row .overflow-hidden {
-	overflow: hidden;
-}
-
-.p8 .trend-images {
-	width: 100%;
-	max-width: 400px;
-	transition: all .3s ease;
-}
-
-.p8 .trend-images:hover {
-	transform: scale(1.1);
-	cursor: pointer;
 }
 
 .modal {
