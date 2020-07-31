@@ -305,6 +305,10 @@ main {
 	fill: #4c442d9e;
 }
 
+.p6 .h1 {
+	text-align: center;
+}
+
 .accordion .card {
 	margin-bottom: 4px;
 	padding: 15px;
@@ -377,6 +381,10 @@ main {
 
 .btn-link .price:hover {
 	text-decoration: underline;
+}
+
+.p7 .h1 {
+	text-align: center;
 }
 
 .p7 .row {
