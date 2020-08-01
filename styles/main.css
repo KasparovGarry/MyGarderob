@@ -451,6 +451,7 @@ main {
 
 .employee .quote {
 	margin-top: 15px;
+	width: 100%;
 }
 
 .employee .quote p {
