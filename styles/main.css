@@ -75,6 +75,11 @@ nav ul li:hover {
 	background-color: #f8f9fa;
 }
 
+.navbar-collapse.show ul li:hover:after {
+	background-color: #f8f9fa;
+	width: 0;
+}
+
 nav ul a {
 	text-decoration: none;
     text-transform: uppercase;
@@ -115,6 +120,10 @@ nav ul a:hover {
 
 .navbar .logo:hover img {
 	transform: scale(1.1);
+}
+
+.navbar button {
+	outline: none;
 }
 
 main {
@@ -570,47 +579,40 @@ main {
 	margin-bottom: 15px;
 }
 
-.modal {
-  	display: none;
-  	position: fixed;
-  	padding-top: 100px;
-  	left: 0;
-  	top: 0;
-  	width: 100%;
-  	height: 100%;
-  	overflow: auto;
-  	background-color: rgba(0,0,0,0.9);
+.p9 .h3 p {
+	text-align: center;
+	margin-bottom: 60px;
 }
 
-.modal-content {
-  	margin: auto;
-  	display: block;
-  	width: 100%;
-  	max-width: 850px;
+.p9 form, .p10 form {
+	padding: 0 90px;
 }
 
-.modal-content{
-  	animation-name: zoom;
-  	animation-duration: 0.6s;
+.p9 form input:focus, .p10 form input:focus, .p9 form textarea:focus, .p10 form textarea:focus {
+	border-color: #ced4da;
+	box-shadow: none;
 }
 
-@keyframes zoom {
-  	from {transform:scale(0)}
-  	to {transform:scale(1)}
+.p9 .btn, .p10 .btn {
+	background-color: #6f6242;
+	border-color: #6f6242;
 }
 
-.close {
-  	position: absolute;
-  	top: 15px;
-  	right: 35px;
-  	color: #f1f1f1;
-  	font-size: 40px;
-  	font-weight: bold;
-  	transition: 0.3s;
+.p9 .btn:hover, .p10 .btn:hover {
+	background-color: #4c442d;
+	border-color: #4c442d;
 }
 
-.close:hover, .close:focus {
-  	color: white;
-  	text-decoration: none;
-  	cursor: pointer;
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+	background-color: #423b27;
+	border-color: #423b27;
+	box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+	box-shadow: none;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+	box-shadow: none;
 }

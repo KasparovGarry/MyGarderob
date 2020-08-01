@@ -49,7 +49,7 @@
                 <li class="nav-item"><a href="#price">прайс</a></li>
                 <li class="nav-item"><a href="#employees">персонал</a></li>
                 <li class="nav-item"><a href="#trends">тренды</a></li>
-                <li class="nav-item"><a href="#">контакты</a></li>
+                <li class="nav-item"><a href="#contacts">контакты</a></li>
             </ul>
         </div>
     </nav>
@@ -700,26 +700,61 @@
     </div>
 
 
+    <div class="scrollFix" id="contacts">
+        <div class="container section p9">
+            <div class="h3">
+                <p>Что-бы оформить заказ или оставить отзыв, заполните одну из форм ниже:</p>
+            </div>
 
-    <form action="https://formspree.io/xyynlrno" method="POST">
-        <label>
-            Your name:
-            <input type="text" name="Имя">
-        </label>
-        <label>
-            Your phone:
-            <input type="text" name="Номер">
-        </label>
-        <label>
-            Your email:
-            <input type="text" name="Почта">
-        </label>
-        <label>
-            Your message:
-            <textarea name="Message"></textarea>
-        </label>
-        <button type="submit">Send</button>
-    </form>
+            <form class="orderForm" action="https://formspree.io/xyynlrno" method="POST">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputName">Ваше Имя</label>
+                        <input type="text" name="Имя" class="form-control" id="inputName" placeholder="Имя" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPhoneNum">Ваш Номер</label>
+                        <input type="tel" name="Номер" class="form-control" id="inputPhoneNum" placeholder="Тел. Номер" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputSubject">Тема</label>
+                    <input type="text" name="Тема" class="form-control" id="inputSubject" placeholder="Тема" required>
+                </div>
+                <div class="mb-3">
+                    <label for="inputMessage">Сообщение</label>
+                    <textarea class="form-control" name="Сообщение" id="inputMessage" placeholder="Ваше Сообщение" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="alt-bg">
+        <div class="container section p10">
+            <form class="reviewForm" action="https://formspree.io/xyynlrno" method="POST">
+                <div class="form-group">
+                    <label for="inputName2">Ваше Имя</label>
+                    <input type="text" name="Имя" class="form-control" id="inputName2" placeholder="Имя" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputAdv">Достоинства</label>
+                        <input type="text" name="Имя" class="form-control" id="inputAdv" placeholder="Достоинства" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputDisadv">Недостатки</label>
+                        <input type="tel" name="Номер" class="form-control" id="inputDisadv" placeholder="Тел. Номер" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="inputMessage2">Сообщение</label>
+                    <textarea class="form-control" name="Сообщение" id="inputMessage2" placeholder="Ваше Сообщение" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </div>
 </main>
 
 <footer>
