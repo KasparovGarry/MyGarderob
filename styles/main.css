@@ -43,6 +43,24 @@ nav ul li {
 	display: flex;
 	align-items: center;
 	transition: background .4s ease;
+	position: relative;
+}
+
+nav ul li:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 0;
+	height: 3px;
+	margin: auto;
+	background-color: #742c2c;
+	transition: all .7s ease;
+}
+
+nav ul li:hover:after {
+	width: 100%;
 }
 
 .navbar-collapse {
@@ -50,7 +68,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-	background-color: #FADA3A;
+	background-color: rgba(194, 194, 194, 0.34);
 }
 
 .navbar-collapse.show ul li:hover {
@@ -90,17 +108,13 @@ nav ul a:hover {
 }
 
 .navbar .logo img {
-	transition: filter .3s ease;
+	transition: all .3s ease;
 	width: 70px;
 	height: 70px;
 }
 
-.navbar .logo:hover span {
-	color: #FADA3A;
-}
-
 .navbar .logo:hover img {
-	filter: invert(80%) sepia(55%) saturate(594%) brightness(105%) contrast(96%);
+	transform: scale(1.1);
 }
 
 main {
@@ -393,14 +407,22 @@ main {
 	flex-direction: column;
 }
 
+.employee .image-and-name {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-self: center;
+}
+
+.employee .name {
+	margin-left: 15px;
+	color: #979797;
+}
+
 .employee .headline {
 	margin-top: 15px;
 	align-self: center;
 	text-align: center;
-}
-
-.employee .name {
-	color: #979797;
 }
 
 .employee .img-circular {
