@@ -375,7 +375,11 @@ main {
 }
 
 .p7 .row {
-	margin-bottom: 45px;
+	margin-bottom: 30px;
+}
+
+.p7 .row .col-lg-6 {
+	margin-bottom: 15px;
 }
 
 .employee {
@@ -384,6 +388,78 @@ main {
 	background-color: white;
 	font-weight: bold;
 	object-fit: cover;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.employee .headline {
+	margin-top: 15px;
+	align-self: center;
+	text-align: center;
+}
+
+.employee .name {
+	color: #979797;
+}
+
+.employee .img-circular {
+	align-self: center;
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.employee .img-circular img {
+	width: 100%;
+	height: auto;
+}
+
+#employee-pic1 {
+	width: 150%;
+	object-position: -15px -12px;
+}
+
+#employee-pic2 {
+	object-position: 0 -5px;
+}
+
+#employee-pic3 {
+	object-position: 0 -7px;
+}
+
+#employee-pic4 {
+	object-position: 0 -6px;
+}
+
+.employee .description {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.employee .desc1 {
+	margin-top: 15px;
+	align-self: center;
+}
+
+.employee .desc1 p {
+	padding: 15px;
+	text-align: center;
+	background-color: rgba(203, 203, 203, 0.63);
+}
+
+.employee .quote {
+	margin-top: 15px;
+}
+
+.employee .quote p {
+	font-style: italic;
+}
+
+.employee .quote .quote-author {
+	display: flex;
+	justify-content: flex-end;
 }
 
 .comment .h4 {
