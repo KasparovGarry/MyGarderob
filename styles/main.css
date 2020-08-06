@@ -110,15 +110,16 @@ nav ul a:hover {
 	font-weight: 500;
 	font-size: 20px;
 	transition: color .3s ease;
+	margin-left: 9px;
 }
 
-.navbar .logo img {
+.navbar .logo #logo {
 	transition: all .3s ease;
-	width: 70px;
-	height: 70px;
+	width: 65px;
+	height: 65px;
 }
 
-.navbar .logo:hover img {
+.navbar .logo:hover #logo {
 	transform: scale(1.1);
 }
 
@@ -615,4 +616,8 @@ main {
 
 .btn-primary.focus, .btn-primary:focus {
 	box-shadow: none;
+}
+
+footer {
+	background-color: #4c442d;
 }
