@@ -119,7 +119,7 @@ nav ul a:hover {
 	height: 70px;
 }
 
-.navbar .logo:hover #logo {
+.navbar .logo:hover img {
 	transform: scale(1.1);
 }
 
