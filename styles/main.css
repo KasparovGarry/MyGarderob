@@ -113,10 +113,10 @@ nav ul a:hover {
 	margin-left: 9px;
 }
 
-.navbar .logo #logo {
+.navbar .logo img {
 	transition: all .3s ease;
-	width: 65px;
-	height: 65px;
+	width: 70px;
+	height: 70px;
 }
 
 .navbar .logo:hover #logo {
