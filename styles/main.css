@@ -3,7 +3,6 @@ html {
 }
 
 * {
-	scroll-behavior: smooth;
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
@@ -616,6 +615,50 @@ main {
 
 .btn-primary.focus, .btn-primary:focus {
 	box-shadow: none;
+}
+
+.reviews-fixed {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	width: 275px;
+	height: 350px;
+	background-color: #c5c5c5;
+	overflow-y: scroll;
+	z-index: 15;
+	border: 5px solid #5d5132;
+	border-radius: 5px;
+	transition: all .5s ease;
+}
+
+.reviews-fixed::-webkit-scrollbar {
+	display: none;
+}
+
+.reviews-fixed {
+	-ms-overflow-style: none;
+}
+
+.pos-relative {
+	position: relative;
+}
+
+.reviews-header {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 0;
+	background-color: #5d5132;
+	width: 100%;
+	max-width: 265px;
+	height: 45px;
+}
+
+.reviews-header .triangle {
+	transition: all .4s ease;
+	height: 37px;
+	fill: white;
 }
 
 footer {
