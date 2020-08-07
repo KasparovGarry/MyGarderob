@@ -494,75 +494,6 @@ main {
 	justify-content: flex-end;
 }
 
-.comment .h4 {
-	margin-bottom: 0;
-}
-
-.star {
-  height: 20px;
-  fill: orange;
-
-}
-
-.plus {
-  height: 25px;
-  fill: green;
-  margin-right: 4px;
-}
-
-.minus {
-  height: 25px;
-  fill: #ff0000;
-  margin-right: 4px;
-}
-
-.advantages {
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.advantages .headline {
-	display: flex;
-	flex-direction: row;
-}
-
-.advantages .content {
-	padding-left: 29px;
-	font-weight: 500;
-}
-
-.disadvantages {
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.disadvantages .headline {
-	display: flex;
-	flex-direction: row;
-}
-
-.disadvantages .content {
-	padding-left: 29px;
-	font-weight: 500;
-}
-
-.comment .text {
-	margin-top: 30px;
-	padding-left: 29px;
-}
-
-.comment .text .content {
-	font-weight: 500;
-}
-
-.star.gray {
-	fill: gray;
-}
-
 #trendsSlideshow .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
 	height: 80vh;
 	object-fit: cover;
@@ -619,16 +550,14 @@ main {
 
 .reviews-fixed {
 	position: fixed;
-	bottom: 15px;
+	bottom: -305px;
 	right: 15px;
 	width: 275px;
 	height: 350px;
 	background-color: #c5c5c5;
 	overflow-y: scroll;
 	z-index: 15;
-	border: 5px solid #5d5132;
-	border-radius: 5px;
-	transition: all .5s ease;
+	transition: all 1s ease;
 }
 
 .reviews-fixed::-webkit-scrollbar {
@@ -649,16 +578,108 @@ main {
 	align-items: center;
 	justify-content: center;
 	margin-top: 0;
-	background-color: #5d5132;
+	background-color: rgba(93, 81, 50, 0.56);
 	width: 100%;
-	max-width: 265px;
+	max-width: 275px;
 	height: 45px;
+	transition: all .4s ease;
 }
 
 .reviews-header .triangle {
 	transition: all .4s ease;
 	height: 37px;
 	fill: white;
+}
+
+.reviews-header:hover {
+	background-color: rgba(93, 81, 50, 0.66);
+	cursor: pointer;
+}
+
+.reviews-header:active {
+	background-color: rgba(93, 81, 50, 0.75);
+	transition: none;
+}
+
+.reviews-fixed .container-fluid {
+	padding-top: 15px;
+}
+
+.reviews-fixed .comment {
+	margin-top: 45px;
+}
+
+.comment .h5 {
+	margin-bottom: 0;
+}
+
+.star {
+	height: 16px;
+	fill: orange;
+
+}
+
+.plus {
+	height: 20px;
+	fill: green;
+	margin-right: 4px;
+}
+
+.minus {
+	height: 20px;
+	fill: #ff0000;
+	margin-right: 4px;
+}
+
+.advantages {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.advantages .headline {
+	display: flex;
+	flex-direction: row;
+}
+
+.advantages .content {
+	padding-left: 24px;
+	font-weight: 500;
+}
+
+.disadvantages {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.disadvantages .headline {
+	display: flex;
+	flex-direction: row;
+}
+
+.disadvantages .content {
+	padding-left: 24px;
+	font-weight: 500;
+}
+
+.comment .text {
+	margin-top: 30px;
+	padding-left: 24px;
+}
+
+.comment .text .content {
+	font-weight: 500;
+}
+
+.star.gray {
+	fill: gray;
+}
+
+.reviews-fixed.show {
+	bottom: 15px;
 }
 
 footer {
