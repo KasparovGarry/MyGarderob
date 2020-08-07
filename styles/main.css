@@ -557,7 +557,7 @@ main {
 	background-color: #c5c5c5;
 	overflow-y: scroll;
 	z-index: 15;
-	transition: all 1s ease;
+	transition: all .6s ease;
 }
 
 .reviews-fixed::-webkit-scrollbar {
@@ -586,9 +586,14 @@ main {
 }
 
 .reviews-header .triangle {
-	transition: all .4s ease;
+	transition: all .8s ease;
 	height: 37px;
 	fill: white;
+	transform: rotate(180deg);
+}
+
+.reviews-fixed.show .triangle {
+	transform: rotate(0deg);
 }
 
 .reviews-header:hover {

@@ -1,5 +1,3 @@
-var reviews = document.getElementsByClassName("reviews-fixed");
-
-reviews.onclick = function () {
-    reviews.classList.toggle("show");
-}
+$(".reviews-fixed").click(function(){
+    $(".reviews-fixed").toggleClass("show");
+});
