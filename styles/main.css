@@ -197,14 +197,11 @@ main {
 	justify-content: center;
 }
 
-.section-1 .scrolldown span {
-	margin-top: 9px;
+.section-1 .scrolldown .chevron {
 	margin-left: 10px;
 	display: block;
-  	width: 0;
-  	height: 0;
-  	border: 20px solid transparent;
-  	border-top-color: white;
+  	height: 45px;
+	fill: white;
   	transition: all .3s ease;
 }
 
@@ -213,8 +210,8 @@ main {
 }
 
 
-.section-1 .scrolldown:hover span {
-	transform: translateY(8px);
+.section-1 .scrolldown:hover .chevron {
+	transform: translateY(5px);
 }
 
 .section {
@@ -585,9 +582,16 @@ main {
 	transition: all .4s ease;
 }
 
+.reviews-header .text {
+	color: white;
+	font-size: 25px;
+	margin-right: 9px;
+	font-weight: 500;
+}
+
 .reviews-header .triangle {
 	transition: all .8s ease;
-	height: 37px;
+	height: 30px;
 	fill: white;
 	transform: rotate(180deg);
 }
