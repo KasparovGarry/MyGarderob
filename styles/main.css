@@ -692,5 +692,80 @@ main {
 }
 
 footer {
-	background-color: #4c442d;
+	background-color: #676767;
+	color: white;
+}
+
+footer .container-fluid {
+	padding: 70px 180px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+footer .logo-and-contacts {
+	display: flex;
+}
+
+footer .logo {
+	display: flex;
+	align-items: center;
+}
+
+footer .logo img {
+	height: 120px;
+	transition: transform .3s ease;
+}
+
+footer .logo img:hover {
+	transform: scale(1.1);
+}
+
+footer .contacts {
+	margin: 0 50px;
+}
+
+footer .h4 {
+	margin-bottom: 50px;
+}
+
+footer .phone-icon {
+	height: 17px;
+	fill: #9a9a9a;
+}
+
+footer .mail-icon {
+	height: 15px;
+	fill: #9a9a9a;
+}
+
+footer .insta-icon {
+	height: 25px;
+	fill: #9a9a9a;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer ul li {
+	margin: 10px 0;
+}
+
+footer ul li a, footer ul li span {
+	margin-left: 7px;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.social-networks {
+	width: 43%;
 }
