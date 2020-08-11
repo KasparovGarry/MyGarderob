@@ -779,4 +779,22 @@ footer a, footer span {
 		width: 15px;
 		height: 15px;
 	}
+
+	.scrollFix {
+		padding-top: 45px;
+	}
+
+	.desc {
+		font-size: 17px;
+		margin-bottom: 15px;
+	}
+
+	.p1 img, .p2 img, .p3 img {
+		height: 290px;
+	}
+
+	#mainSlideshow .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+		height: 290px;
+		object-fit: cover;
+	}
 }
