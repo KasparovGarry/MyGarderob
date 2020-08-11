@@ -757,6 +757,11 @@ footer a, footer span {
 	font-size: 18px;
 }
 
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
 @media only screen and (max-width: 576px) {
 
 	.section-1 .text {
@@ -796,5 +801,47 @@ footer a, footer span {
 	#mainSlideshow .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
 		height: 290px;
 		object-fit: cover;
+	}
+
+	#box, #toolkit, #hanger {
+		height: 35px;
+		width: 50px;
+	}
+
+	.h1 {
+		font-size: 28px;
+	}
+
+	.p5 .h4 {
+		font-size: 16px;
+	}
+
+	.p9 .h3 {
+		font-size: 25px;
+	}
+
+	.accordion .card {
+		padding: 0;
+	}
+
+	.card-header {
+		padding: 8px;
+	}
+
+	.btn-link {
+		font-size: 15px;
+		text-align: left;
+	}
+
+	.p7 .row {
+		margin-bottom: 0;
+	}
+
+	#trendsSlideshow .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+		height: 200px;
+	}
+
+	footer .col-md {
+		margin-bottom: 15px;
 	}
 }
