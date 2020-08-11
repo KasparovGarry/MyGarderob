@@ -833,6 +833,11 @@ footer a, footer span {
 		text-align: left;
 	}
 
+	.accordion .card .card-body ul li {
+		font-size: 15px;
+	}
+
+
 	.p7 .row {
 		margin-bottom: 0;
 	}
