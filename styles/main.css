@@ -758,8 +758,13 @@ footer a, footer span {
 }
 
 @media only screen and (max-width: 576px) {
+
 	.section-1 .text {
-		font-size: 22px;
+		font-size: 19px;
+	}
+
+	.section-1 .text p {
+		padding: 20px 20px 0 20px;
 	}
 
 	.section-1 .scrolldown .chevron {
@@ -767,7 +772,7 @@ footer a, footer span {
 	}
 
 	.section-1 .text .num {
-		font-size: 14px;
+		font-size: 13px;
 	}
 
 	.section-1 .text .num img {
