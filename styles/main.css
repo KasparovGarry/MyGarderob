@@ -837,6 +837,9 @@ footer a, footer span {
 		font-size: 15px;
 	}
 
+	.accordion .card .card-body {
+		padding: 10px 25px;
+	}
 
 	.p7 .row {
 		margin-bottom: 0;
