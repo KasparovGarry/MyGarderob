@@ -303,6 +303,7 @@ main {
 
 #box, #toolkit, #hanger {
 	height: 40px;
+	width: auto;
 	fill: #4c442d;
 	transition: all .3s ease;
 }
@@ -351,6 +352,7 @@ main {
 }
 
 .btn-link {
+	text-align: left;
 	font-size: 25px;
 	font-weight: 500;
     color: #4c442d;
@@ -762,8 +764,25 @@ footer a, footer span {
 	margin-right: 0;
 }
 
-@media only screen and (max-width: 576px) {
 
+
+
+@media only screen and (max-width: 350px) {
+	.navbar {
+		padding: 0 15px;
+	}
+
+	.navbar .logo img {
+		width: 60px;
+		height: 60px;
+	}
+
+	.navbar .logo span {
+		font-size: 17px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
 	.section-1 .text {
 		font-size: 19px;
 	}
@@ -805,7 +824,7 @@ footer a, footer span {
 
 	#box, #toolkit, #hanger {
 		height: 35px;
-		width: 50px;
+		width: auto;
 	}
 
 	.h1 {
@@ -830,7 +849,6 @@ footer a, footer span {
 
 	.btn-link {
 		font-size: 15px;
-		text-align: left;
 	}
 
 	.accordion .card .card-body ul li {
@@ -838,7 +856,7 @@ footer a, footer span {
 	}
 
 	.accordion .card .card-body {
-		padding: 10px 25px 10px 25px;
+		padding: 10px 25px;
 	}
 
 	.p7 .row {
@@ -846,10 +864,297 @@ footer a, footer span {
 	}
 
 	#trendsSlideshow .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
-		height: 200px;
+		height: auto;
 	}
 
 	footer .col-md {
 		margin-bottom: 15px;
+	}
+}
+
+
+
+@media only screen and (min-width: 576px) {
+	.section-1 .text {
+		font-size: 27px;
+	}
+
+	.section-1 .text p {
+		padding: 30px 30px 0 30px;
+	}
+
+	.section-1 .scrolldown .chevron {
+		height: 25px;
+	}
+
+	.section-1 .text .num {
+		font-size: 17px;
+	}
+
+	.section-1 .text .num img {
+		width: 17px;
+		height: 17px;
+	}
+
+	.scrollFix {
+		padding-top: 45px;
+	}
+
+	.desc {
+		font-size: 25px;
+		margin-bottom: 30px;
+	}
+
+	.p1 img, .p2 img, .p3 img {
+		height: 350px;
+	}
+
+	#mainSlideshow .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+		height: auto;
+		object-fit: cover;
+	}
+
+	.p5 .h4 {
+		font-size: 20px;
+	}
+
+	.p5 .check {
+		margin-bottom: 10px;
+	}
+
+	.accordion .card {
+		padding: 0;
+	}
+
+	.card-header {
+		padding: 8px;
+	}
+
+	.btn-link {
+		font-size: 18px;
+	}
+
+	.accordion .card .card-body ul li {
+		font-size: 18px;
+	}
+
+	.accordion .card .card-body {
+		padding: 10px 25px;
+	}
+
+	.p7 .row {
+		margin-bottom: 0;
+	}
+
+	#trendsSlideshow .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+		height: auto;
+	}
+
+	footer .col-md {
+		margin-bottom: 15px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.section-1 .text {
+		font-size: 38px;
+	}
+
+	.section-1 .text p {
+		padding: 45px 45px 0 45px;
+	}
+
+	.section-1 .scrolldown .chevron {
+		height: 35px;
+	}
+
+	.section-1 .text .num {
+		font-size: 20px;
+	}
+
+	.section-1 .text .num img {
+		width: 23px;
+		height: 23px;
+	}
+
+	.scrollFix {
+		padding-top: 45px;
+	}
+
+	.desc {
+		font-size: 1.75rem;
+		margin-bottom: 30px;
+	}
+
+	.p1 img, .p2 img, .p3 img {
+		height: 385px;
+	}
+
+	#mainSlideshow .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+		height: auto;
+		object-fit: cover;
+	}
+
+	#box, #toolkit, #hanger {
+		height: 35px;
+	}
+
+	.p5 .h4 {
+		font-size: 15px;
+	}
+
+	.p5 .check {
+		margin-bottom: 0;
+	}
+
+	.accordion .card {
+		padding: 0;
+	}
+
+	.card-header {
+		padding: 8px;
+	}
+
+	.btn-link {
+		font-size: 18px;
+	}
+
+	.accordion .card .card-body ul li {
+		font-size: 18px;
+	}
+
+	.accordion .card .card-body {
+		padding: 10px 25px;
+	}
+
+	.p7 .row {
+		margin-bottom: 0;
+	}
+
+	#trendsSlideshow .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+		height: auto;
+	}
+
+	footer .col-md {
+		margin-bottom: 15px;
+	}
+}
+
+
+
+@media only screen and (min-width: 992px) {
+	nav ul a {
+		padding: 30px 22px;
+		font-size: 18px;
+	}
+
+	.section-1 .text {
+		font-size: 50px;
+	}
+
+	.section-1 .text p {
+		padding: 45px 45px 0 45px;
+	}
+
+	.section-1 .scrolldown .chevron {
+		height: 45px;
+	}
+
+	.section-1 .text .num {
+		font-size: 23px;
+	}
+
+	.section-1 .text .num img {
+		width: 25px;
+		height: 25px;
+	}
+
+	.scrollFix {
+		padding-top: 80px;
+	}
+
+	.p1 img, .p2 img, .p3 img {
+		height: 413px;
+	}
+
+	#mainSlideshow .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+		height: 467px;
+		object-fit: cover;
+	}
+
+	#box, #toolkit, #hanger {
+		height: 40px;
+	}
+
+	.p5 .h4 {
+		font-size: 1.5rem;
+	}
+
+	.p5 .check {
+		margin-bottom: 0;
+	}
+
+	.accordion .card {
+		padding: 15px;
+	}
+
+	.card-header {
+		padding: .75rem 1.25rem;
+	}
+
+	.btn-link {
+		font-size: 25px;
+	}
+
+	.accordion .card .card-body ul li {
+		font-size: 20px;
+	}
+
+	.accordion .card .card-body {
+		padding: 2.25rem;
+	}
+
+	.p7 .row {
+		margin-bottom: 30px;
+	}
+
+	#trendsSlideshow .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+		height: auto;
+	}
+
+	footer .col-md {
+		margin-bottom: 15px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	nav ul a {
+		padding: 26px 22px;
+		font-size: 23px;
+	}
+
+	.section-1 .text {
+		font-size: 75px;
+	}
+
+	.section-1 .text p {
+		padding: 45px 45px 0 45px;
+	}
+
+	.section-1 .scrolldown .chevron {
+		height: 45px;
+	}
+
+	.section-1 .text .num {
+		font-size: 23px;
+	}
+
+	.section-1 .text .num img {
+		width: 25px;
+		height: 25px;
+	}
+
+	#trendsSlideshow .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+		height: 80vh;
 	}
 }
