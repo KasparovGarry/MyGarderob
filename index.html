@@ -39,7 +39,7 @@
             <img src="images/logo.png" alt="MyGардероб Logo">
             <span>MyGардероб</span>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler responsiveClose" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -218,17 +218,26 @@
                         <div class="card-header" id="headingOne">
                             <h2 class="mb-0">
                                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <span>Услуги дизайнера</span> <span class="price">9 990 ₽</span>
+                                    <span>Оформление гардеробной комнаты</span>
                                 </button>
                             </h2>
                         </div>
 
                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#pricelistAccordion">
                             <div class="card-body">
+                                <div class="h5">Услуги дизайнера</div>
+                                <p><u>Цена:</u><span class="price">9 990 ₽</span></p>
                                 <ul>
                                     <li>Оптимизация пространства</li>
                                     <li>Удобная зонация одежды(сезонность, тип одежды, стилистические особенности, цвет)</li>
                                     <li>Подбор аксессуаров для хранения</li>
+                                </ul>
+
+                                <div class="h5">Услуги стилиста</div>
+                                <ul>
+                                    <li>Оптимизация пространства</li>
+                                    <li>Удобная зонация одежды (cезонность, тип одежды, стилистические особенности, цвет)</li>
+                                    <li>Подбор 5 ежедневных образов</li>
                                 </ul>
                             </div>
                         </div>
@@ -239,16 +248,16 @@
                             <h2 class="mb-0">
                                 <button class="btn btn-link collapsed"
                                         id="btn2" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <span>Услуги дизайнера и стилиста</span> <span class="price">14 990 ₽</span>
+                                    <span>Гардеробная «под ключ»</span> <span class="price">14 990 ₽</span>
                                 </button>
                             </h2>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#pricelistAccordion">
                             <div class="card-body">
                                 <ul>
-                                    <li>Оптимизация пространства</li>
-                                    <li>Удобная зонация одежды (cезонность, тип одежды, стилистические особенности, цвет)</li>
-                                    <li>Подбор 5 ежедневных образов</li>
+                                    <li>Рациональная планировка пространства по индивидуальному проекту</li>
+                                    <li>Подбор материалов и аксессуаров для хранения, сборка</li>
+                                    <li>Услуги визуального дизайнера</li>
                                 </ul>
                             </div>
                         </div>
@@ -257,16 +266,16 @@
                         <div class="card-header" id="headingThree">
                             <h2 class="mb-0">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <span>Гардеробная «под ключ»</span>
+                                    <span>Shopping о стилистом</span>
                                 </button>
                             </h2>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#pricelistAccordion">
                             <div class="card-body">
                                 <ul>
-                                    <li>Рациональная планировка пространства по индивидуальному проекту</li>
-                                    <li>Подбор материалов и аксессуаров для хранения, сборка</li>
-                                    <li>Услуги визуального дизайнера</li>
+                                    <li>Целый день шоппинга со стилистом</li>
+                                    <li>Индивидуальный подход к каждому клиенту</li>
+                                    <li>Total look</li>
                                 </ul>
                             </div>
                         </div>
@@ -560,8 +569,9 @@
             </form>
         </div>
     </div>
+
     <div class="reviews-fixed">
-        <div class="reviews-header">
+        <div class="reviews-header responsiveClose">
             <span class="text">Отзывы</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="triangle"><g transform="translate(-336.000000, -336.000000)"><path d="M344,339 L352,349 L336,349 L344,339 Z M344,339" transform="translate(344.000000, 344.000000) scale(1, -1) translate(-344.000000, -344.000000) "></path></g></svg>
         </div>

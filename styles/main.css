@@ -24,7 +24,7 @@
 	background-size: cover;
 	box-sizing: border-box;
 	transition: background .4s ease;
-	z-index: 2;
+	z-index: 16;
 	box-shadow: 1px 0 8px 0 grey;
 }
 
@@ -80,10 +80,10 @@ nav ul a {
 	text-decoration: none;
     text-transform: uppercase;
     color: black;
-    padding: 26px 22px;
+    padding: 30px 22px;
     height: 100%;
 	width: 100%;
-    font-size: 23px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -373,7 +373,7 @@ main {
 	text-decoration: none;
 }
 
-.btn-link .price {
+.card-body .price {
 	color: green;
 	font-weight: 400;
 	display: -webkit-flex;
@@ -384,7 +384,8 @@ main {
 	align-items: center;
 }
 
-.btn-link .price:hover {
+.card-body .price:hover {
+	cursor: pointer;
 	text-decoration: underline;
 }
 
@@ -546,22 +547,18 @@ main {
 
 .reviews-fixed {
 	position: fixed;
-	bottom: -305px;
+	bottom: 45px;
 	right: 15px;
 	width: 275px;
-	height: 350px;
 	background-color: #c5c5c5;
 	overflow-y: scroll;
+	-ms-overflow-style: none;
+	border-radius: 6px 6px 0 0;
 	z-index: 15;
-	transition: all .6s ease;
 }
 
 .reviews-fixed::-webkit-scrollbar {
 	display: none;
-}
-
-.reviews-fixed {
-	-ms-overflow-style: none;
 }
 
 .pos-relative {
@@ -574,10 +571,11 @@ main {
 	align-items: center;
 	justify-content: center;
 	margin-top: 0;
-	background-color: rgba(93, 81, 50, 0.56);
+	background-color: #8b8473;
 	width: 100%;
 	max-width: 275px;
 	height: 45px;
+	border-radius: 6px 6px 0 0;
 	transition: all .4s ease;
 }
 
@@ -590,7 +588,7 @@ main {
 
 .reviews-header .triangle {
 	transition: all .8s ease;
-	height: 30px;
+	height: 15px;
 	fill: white;
 	transform: rotate(180deg);
 }
@@ -599,22 +597,24 @@ main {
 	transform: rotate(0deg);
 }
 
+.reviews-fixed:not(.show) > .container-fluid {
+	max-height: 0;
+	transition: max-height .6s ease;
+}
+
+.reviews-fixed.show > .container-fluid {
+	max-height: 305px;
+	transition: max-height .6s ease;
+}
+
 .reviews-header:hover {
-	background-color: rgba(93, 81, 50, 0.66);
+	background-color: #837a62;
 	cursor: pointer;
 }
 
 .reviews-header:active {
-	background-color: rgba(93, 81, 50, 0.75);
+	background-color: #837a62;
 	transition: none;
-}
-
-.reviews-fixed .container-fluid {
-	padding-top: 15px;
-}
-
-.reviews-fixed .comment {
-	margin-top: 45px;
 }
 
 .comment .h5 {
@@ -684,10 +684,6 @@ main {
 
 .star.gray {
 	fill: gray;
-}
-
-.reviews-fixed.show {
-	bottom: 15px;
 }
 
 footer {
@@ -1037,14 +1033,17 @@ footer a, footer span {
 	}
 }
 
-
-
-@media only screen and (min-width: 992px) {
-	nav ul a {
-		padding: 30px 22px;
-		font-size: 18px;
+@media only screen and (max-width: 992px) {
+	nav ul li {
+		height: auto;
 	}
 
+	nav ul li a {
+		padding: 15px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
 	.section-1 .text {
 		font-size: 50px;
 	}
@@ -1125,11 +1124,6 @@ footer a, footer span {
 }
 
 @media only screen and (min-width: 1200px) {
-	nav ul a {
-		padding: 26px 22px;
-		font-size: 23px;
-	}
-
 	.section-1 .text {
 		font-size: 75px;
 	}
