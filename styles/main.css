@@ -11,8 +11,10 @@
 body {
 	background-image: url(https://imgbbb.com/images/2020/07/22/Dve-lyustry-v-garderobnoj-komnate.jpg);
 	background-repeat: no-repeat;
-	-webkit-background-size: cover;
 	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	background-attachment: fixed;
 }
