@@ -13,16 +13,3 @@ document.querySelectorAll(".nav-item")
             }
         })
     })
-
-document.querySelectorAll(".responsiveClose")
-    .forEach((responsiveClose) => {
-        responsiveClose.addEventListener("click", () => {
-            if (navBar.hasClass("show")) {
-                reviews.removeClass("show")
-            }
-
-            if (reviews.hasClass("show")) {
-                navBar.removeClass("show")
-            }
-        })
-    })
