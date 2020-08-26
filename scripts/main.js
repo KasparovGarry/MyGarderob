@@ -1,9 +1,4 @@
 const navBar = $("#navbarSupportedContent");
-const reviews = $(".reviews-fixed");
-
-reviews.click(function () {
-    $(".reviews-fixed").toggleClass("show");
-});
 
 document.querySelectorAll(".nav-item")
     .forEach((navItem) => {
