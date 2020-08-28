@@ -17,7 +17,7 @@ body:after {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background-image: url(https://imgbbb.com/images/2020/07/22/Dve-lyustry-v-garderobnoj-komnate.jpg);
+	background-image: url(https://imgbbb.com/images/2020/08/28/background-img.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
@@ -1116,6 +1116,13 @@ footer a, footer span {
 }
 
 @media only screen and (max-width: 992px) {
+	body:after {
+		-webkit-background-size: auto;
+		-moz-background-size: auto;
+		-o-background-size: auto;
+		background-size: auto;
+	}
+
 	nav ul li {
 		height: auto;
 	}
