@@ -1116,13 +1116,6 @@ footer a, footer span {
 }
 
 @media only screen and (max-width: 992px) {
-	body:after {
-		-webkit-background-size: auto;
-		-moz-background-size: auto;
-		-o-background-size: auto;
-		background-size: auto;
-	}
-
 	nav ul li {
 		height: auto;
 	}
