@@ -151,7 +151,7 @@ main {
 	padding-top: 80px;
 }
 
-.section-1 {
+.banner {
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -159,7 +159,7 @@ main {
 	position: relative;	
 }
 
-.section-1 .text {
+.banner .text {
 	color: #f2f2f2;
 	font-weight: bold;
 	display: flex;
@@ -170,42 +170,42 @@ main {
 	background-color: rgba(146, 129, 113, .53);
 }
 
-.section-1 .text p {
+.banner .text p {
 	display: flex;
 	flex-direction: column;
 	padding: 45px 45px 0 45px;
 }
 
-.section-1 .text .scrolldown {
+.banner .text .scrolldown {
 	font-family: 'Ruda', sans-serif;
 	font-weight: 600;
 }
 
-.section-1 .num {
+.banner .num {
 	display: flex;
     justify-content: center;
     align-items: center;
     color: inherit;
-    font-size: 23px;
+    font-size: 22px;
     transition: all .2s ease;
     width: 250px;
     margin: auto;
     padding: 5px;
 }
 
-.section-1 .num img {
+.banner .num img {
 	height: 25px;
 	width: 25px;
 	margin-right: 7px;
 	border-radius: 50%;
 }
 
-.section-1 .num:hover {
+.banner .num:hover {
 	text-decoration: none;
 	color: #ffe7db;
 }
 
-.section-1 .text .scrolldown {
+.banner .text .scrolldown {
 	display: flex;
 	flex-direction: row;
 	color: white;
@@ -213,7 +213,7 @@ main {
 	justify-content: center;
 }
 
-.section-1 .scrolldown .chevron {
+.banner .scrolldown .chevron {
 	margin-left: 10px;
 	display: block;
   	height: 45px;
@@ -221,12 +221,12 @@ main {
   	transition: all .3s ease;
 }
 
-.section-1 .scrolldown {
+.banner .scrolldown {
 	text-decoration: none;
 }
 
 
-.section-1 .scrolldown:hover .chevron {
+.banner .scrolldown:hover .chevron {
 	transform: translateY(5px);
 }
 
@@ -364,7 +364,7 @@ main {
     display: block;
     padding: 4px 9px 3px;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .accordion .card .card-body ul li:before {
@@ -375,7 +375,7 @@ main {
 
 .btn-link {
 	text-align: left;
-	font-size: 25px;
+	font-size: 24px;
 	font-weight: 500;
     color: #4c442d;
     text-decoration: none;
@@ -741,28 +741,28 @@ footer a, footer span {
 	}
 
 	.navbar .logo span {
-		font-size: 17px;
+		font-size: 16px;
 	}
 }
 
 @media only screen and (max-width: 576px) {
-	.section-1 .text {
-		font-size: 19px;
+	.banner .text {
+		font-size: 18px;
 	}
 
-	.section-1 .text p {
+	.banner .text p {
 		padding: 20px 20px 0 20px;
 	}
 
-	.section-1 .scrolldown .chevron {
+	.banner .scrolldown .chevron {
 		height: 20px;
 	}
 
-	.section-1 .text .num {
-		font-size: 13px;
+	.banner .text .num {
+		font-size: 14px;
 	}
 
-	.section-1 .text .num img {
+	.banner .text .num img {
 		width: 15px;
 		height: 15px;
 	}
@@ -772,7 +772,7 @@ footer a, footer span {
 	}
 
 	.desc {
-		font-size: 17px;
+		font-size: 16px;
 		margin-bottom: 15px;
 	}
 
@@ -799,7 +799,7 @@ footer a, footer span {
 	}
 
 	.p11 .h3 {
-		font-size: 25px;
+		font-size: 24px;
 	}
 
 	.accordion .card {
@@ -810,12 +810,21 @@ footer a, footer span {
 		padding: 8px;
 	}
 
+	.p6 .accordion .h5 {
+		font-size: 14px;
+	}
+
+	.p6 .accordion strong,
+	.p6 .accordion .price {
+		font-size: 12px;
+	}
+
 	.btn-link {
-		font-size: 15px;
+		font-size: 14px;
 	}
 
 	.accordion .card .card-body ul li {
-		font-size: 15px;
+		font-size: 14px;
 	}
 
 	.accordion .card .card-body {
@@ -868,23 +877,23 @@ footer a, footer span {
 
 
 @media only screen and (min-width: 576px) {
-	.section-1 .text {
-		font-size: 27px;
+	.banner .text {
+		font-size: 26px;
 	}
 
-	.section-1 .text p {
+	.banner .text p {
 		padding: 30px 30px 0 30px;
 	}
 
-	.section-1 .scrolldown .chevron {
+	.banner .scrolldown .chevron {
 		height: 25px;
 	}
 
-	.section-1 .text .num {
-		font-size: 17px;
+	.banner .text .num {
+		font-size: 16px;
 	}
 
-	.section-1 .text .num img {
+	.banner .text .num img {
 		width: 17px;
 		height: 17px;
 	}
@@ -894,7 +903,7 @@ footer a, footer span {
 	}
 
 	.desc {
-		font-size: 25px;
+		font-size: 24px;
 		margin-bottom: 30px;
 	}
 
@@ -921,6 +930,15 @@ footer a, footer span {
 
 	.card-header {
 		padding: 8px;
+	}
+
+	.p6 .accordion .h5 {
+		font-size: 16px;
+	}
+
+	.p6 .accordion strong,
+	.p6 .accordion .price {
+		font-size: 14px;
 	}
 
 	.btn-link {
@@ -979,23 +997,23 @@ footer a, footer span {
 }
 
 @media only screen and (min-width: 768px) {
-	.section-1 .text {
+	.banner .text {
 		font-size: 38px;
 	}
 
-	.section-1 .text p {
+	.banner .text p {
 		padding: 45px 45px 0 45px;
 	}
 
-	.section-1 .scrolldown .chevron {
+	.banner .scrolldown .chevron {
 		height: 35px;
 	}
 
-	.section-1 .text .num {
+	.banner .text .num {
 		font-size: 20px;
 	}
 
-	.section-1 .text .num img {
+	.banner .text .num img {
 		width: 23px;
 		height: 23px;
 	}
@@ -1023,11 +1041,20 @@ footer a, footer span {
 	}
 
 	.p5 .h4 {
-		font-size: 15px;
+		font-size: 14px;
 	}
 
 	.p5 .check {
 		margin-bottom: 0;
+	}
+
+	.p6 .accordion .h5 {
+		font-size: 16px;
+	}
+
+	.p6 .accordion strong,
+	.p6 .accordion .price {
+		font-size: 14px;
 	}
 
 	.accordion .card {
@@ -1099,23 +1126,23 @@ footer a, footer span {
 }
 
 @media only screen and (min-width: 992px) {
-	.section-1 .text {
+	.banner .text {
 		font-size: 50px;
 	}
 
-	.section-1 .text p {
+	.banner .text p {
 		padding: 45px 45px 0 45px;
 	}
 
-	.section-1 .scrolldown .chevron {
+	.banner .scrolldown .chevron {
 		height: 45px;
 	}
 
-	.section-1 .text .num {
-		font-size: 23px;
+	.banner .text .num {
+		font-size: 22px;
 	}
 
-	.section-1 .text .num img {
+	.banner .text .num img {
 		width: 25px;
 		height: 25px;
 	}
@@ -1146,6 +1173,15 @@ footer a, footer span {
 		margin-bottom: 0;
 	}
 
+	.p6 .accordion .h5 {
+		font-size: 1.25rem;
+	}
+
+	.p6 .accordion strong,
+	.p6 .accordion .price {
+		font-size: 18px;
+	}
+
 	.accordion .card {
 		padding: 15px;
 	}
@@ -1155,7 +1191,7 @@ footer a, footer span {
 	}
 
 	.btn-link {
-		font-size: 25px;
+		font-size: 24px;
 	}
 
 	.accordion .card .card-body ul li {
@@ -1200,23 +1236,23 @@ footer a, footer span {
 }
 
 @media only screen and (min-width: 1200px) {
-	.section-1 .text {
+	.banner .text {
 		font-size: 72px;
 	}
 
-	.section-1 .text p {
+	.banner .text p {
 		padding: 45px 45px 0 45px;
 	}
 
-	.section-1 .scrolldown .chevron {
+	.banner .scrolldown .chevron {
 		height: 45px;
 	}
 
-	.section-1 .text .num {
-		font-size: 23px;
+	.banner .text .num {
+		font-size: 22px;
 	}
 
-	.section-1 .text .num img {
+	.banner .text .num img {
 		width: 25px;
 		height: 25px;
 	}
