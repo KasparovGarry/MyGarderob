@@ -8,12 +8,21 @@
 	scroll-behavior: smooth;
 }
 
-body {
-	width: 100%;
-	height: 100%;
+body:after {
+	content: "";
+	display: block;
+	z-index: -1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 	background-image: url(https://imgbbb.com/images/2020/07/22/Dve-lyustry-v-garderobnoj-komnate.jpg);
-	background-attachment: scroll;
-	background-position: left top;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 }
 
@@ -389,6 +398,15 @@ main {
 	text-decoration: none;
 }
 
+.card-body p {
+	margin-left: 5px;
+	display: flex;
+}
+
+.card-body p strong {
+	font-size: 18px;
+}
+
 .card-body .price {
 	color: green;
 	font-weight: 400;
@@ -398,10 +416,10 @@ main {
 	display: -o-flex;
 	display: flex;
 	align-items: center;
+	margin: 0 5px;
 }
 
 .card-body .price:hover {
-	cursor: pointer;
 	text-decoration: underline;
 }
 
