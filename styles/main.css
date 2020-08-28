@@ -1121,7 +1121,8 @@ footer a, footer span {
 	}
 
 	nav ul li a {
-		padding: 10px;
+		padding: 7px;
+		font-size: 16px;
 	}
 }
 
