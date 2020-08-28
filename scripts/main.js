@@ -8,3 +8,9 @@ document.querySelectorAll(".nav-item")
             }
         })
     })
+
+
+$(window).scroll(function() {
+    var scrolledY = $(window).scrollTop();
+    $('.fixed-bg').css('background-position', 'left ' + ((scrolledY)) + 'px');
+});
