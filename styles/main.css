@@ -24,6 +24,7 @@ body:after {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	transition: height .4s ease;
 }
 
 .navbar {
@@ -70,7 +71,7 @@ nav ul li:after {
 	height: 3px;
 	margin: auto;
 	background-color: #742c2c;
-	transition: all .7s ease;
+	transition: width .7s ease;
 }
 
 nav ul li:hover:after {
@@ -130,7 +131,7 @@ nav ul a:hover {
 }
 
 .navbar .logo img {
-	transition: all .3s ease;
+	transition: transform .3s ease;
 	width: 70px;
 	height: 70px;
 }
@@ -187,7 +188,7 @@ main {
     align-items: center;
     color: inherit;
     font-size: 22px;
-    transition: all .2s ease;
+    transition: color .2s ease;
     width: 250px;
     margin: auto;
     padding: 5px;
@@ -218,7 +219,7 @@ main {
 	display: block;
   	height: 45px;
 	fill: white;
-  	transition: all .3s ease;
+  	transition: transform .3s ease;
 }
 
 .banner .scrolldown {
@@ -317,22 +318,21 @@ main {
 	flex-direction: column;
 	text-align: center;
 	padding: 15px;
-	transition: all .3s ease;
 }
 
 .p5 .row .col-md:hover {
 	cursor: pointer;
 }
 
-.p5 .row .col-md:hover #box, .p5 .row .col-md:hover #toolkit, .p5 .row .col-md:hover #hanger {
-	transform: scale(1.2);
-}
-
 #box, #toolkit, #hanger {
 	height: 40px;
 	width: auto;
 	fill: #4c442d;
-	transition: all .3s ease;
+	transition: transform .3s ease;
+}
+
+.p5 .row .col-md:hover #box, .p5 .row .col-md:hover #toolkit, .p5 .row .col-md:hover #hanger {
+	transform: scale(1.2);
 }
 
 .tool1 {
