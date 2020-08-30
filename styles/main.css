@@ -24,7 +24,7 @@ body:after {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	transition: max-height .4s ease;
+	transition: all .4s ease;
 }
 
 .navbar {
@@ -1139,7 +1139,7 @@ footer a, footer span {
 
 	nav ul li a {
 		padding: 7px;
-		font-size: 16px;
+		font-size: 14px;
 	}
 }
 
