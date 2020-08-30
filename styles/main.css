@@ -17,7 +17,8 @@ body:after {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	height: 100% !important;
+	height: 100vh !important;
+	width: 100%; !important;
 	background-image: url(https://imgbbb.com/images/2020/08/28/background-img.png);
 	background-repeat: no-repeat;
 	background-position: center;
