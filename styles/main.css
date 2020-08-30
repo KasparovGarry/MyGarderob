@@ -312,6 +312,10 @@ main {
 	font-family: 'Ruda', sans-serif;
 }
 
+.p5 .h4 {
+	font-weight: 400;
+}
+
 .p5 .check {
 	height: 50px;
 }
@@ -1188,7 +1192,6 @@ footer a, footer span {
 
 	.p5 .h4 {
 		font-size: 1.4rem;
-		font-weight: 400;
 	}
 
 	.p5 .check {
