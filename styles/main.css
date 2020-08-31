@@ -435,6 +435,13 @@ main {
     text-decoration: underline;
 }
 
+.p6 .attentiontext {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    color: gray;
+}
+
 .p7 .row {
     margin-bottom: 30px;
 }
@@ -850,13 +857,6 @@ footer a {
 
     .accordion .card .card-body {
         padding: 10px 25px;
-    }
-
-    .p6 .attention {
-        display: block;
-        margin-top: 30px;
-        text-align: center;
-        color: gray;
     }
 
     .p7 .row {
