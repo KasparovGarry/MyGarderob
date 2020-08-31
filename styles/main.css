@@ -740,7 +740,7 @@ footer a:hover {
     text-decoration: none;
 }
 
-footer a, footer span {
+footer a {
     font-size: 18px;
 }
 
@@ -893,6 +893,11 @@ footer a, footer span {
     #trendsSlideshow .carousel-inner > .carousel-item > img,
     .carousel-inner > .carousel-item > a > img {
         height: auto;
+    }
+
+    footer .logo {
+        display: flex;
+        flex-direction: column;
     }
 
     footer .col-md {
