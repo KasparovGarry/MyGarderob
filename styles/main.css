@@ -770,6 +770,10 @@ footer a {
     .navbar .logo span {
         font-size: 16px;
     }
+
+    .attentiontext {
+        font-size: 8px;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -857,6 +861,10 @@ footer a {
 
     .accordion .card .card-body {
         padding: 10px 25px;
+    }
+
+    .attentiontext {
+        font-size: 12px;
     }
 
     .p7 .row {
@@ -991,6 +999,10 @@ footer a {
         padding: 10px 25px;
     }
 
+    .attentiontext {
+        font-size: 14px;
+    }
+
     .p7 .row {
         margin-bottom: 0;
     }
@@ -1115,6 +1127,10 @@ footer a {
 
     .accordion .card .card-body {
         padding: 10px 25px;
+    }
+
+    .attentiontext {
+        font-size: 16px;
     }
 
     .p7 .row {
