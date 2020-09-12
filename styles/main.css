@@ -12,7 +12,13 @@ html {
     scroll-behavior: smooth;
 }
 
-body:after {
+::selection {
+    background-color: #84764e;
+    color: white;
+    text-shadow: none;
+}
+
+body::after {
     content: "";
     display: block;
     z-index: -1;
@@ -22,7 +28,7 @@ body:after {
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: url(https://imgbbb.com/images/2020/08/28/background-img.png);
+    background-image: url(../img/background-img.png);
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
@@ -66,7 +72,7 @@ nav ul li {
     position: relative;
 }
 
-nav ul li:after {
+nav ul li::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -79,7 +85,7 @@ nav ul li:after {
     transition: width .4s ease;
 }
 
-nav ul li:hover:after {
+nav ul li:hover::after {
     width: 100%;
 }
 
@@ -95,7 +101,7 @@ nav ul li:hover {
     background-color: #f8f9fa;
 }
 
-.navbar-collapse.show ul li:hover:after {
+.navbar-collapse.show ul li:hover::after {
     background-color: #f8f9fa;
     width: 0;
 }
@@ -379,7 +385,7 @@ main {
     font-weight: 400;
 }
 
-.accordion .card .card-body ul li:before {
+.accordion .card .card-body ul li::before {
     content: "-";
     position: absolute;
     left: 0;
