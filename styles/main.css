@@ -721,13 +721,19 @@ footer .col-md {
     flex-direction: column;
     align-items: center;
 }
+footer .row:first-child .col-md:nth-child(2) {
+    display: none;
+}
 
 footer .col-md:hover .phone-icon,
-footer .col-md:hover .mail-icon {
+footer .col-md:hover .mail-icon,
+footer .col-md:hover .insta-icon {
     transform: scale(1.2);
 }
 
-footer .phone-icon, footer .mail-icon {
+footer .phone-icon,
+footer .mail-icon,
+footer .insta-icon {
     margin-bottom: 15px;
 }
 
@@ -739,6 +745,12 @@ footer .phone-icon {
 
 footer .mail-icon {
     height: 25px;
+    fill: #9a9a9a;
+    transition: transform .4s ease;
+}
+
+footer .insta-icon {
+    height: 37px;
     fill: #9a9a9a;
     transition: transform .4s ease;
 }
@@ -755,6 +767,10 @@ footer a:hover {
 
 footer a {
     font-size: 18px;
+}
+
+footer .row {
+    margin: 15px 0;
 }
 
 .row {
@@ -1046,6 +1062,20 @@ footer a {
     #trendsSlideshow .carousel-inner > .carousel-item > img,
     .carousel-inner > .carousel-item > a > img {
         height: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    footer .row:first-child .col-md:nth-child(2) {
+        display: flex;
+    }
+
+    footer .row:first-child .col-md:last-child {
+        display: none;
+    }
+
+    footer .row {
+        margin: 0;
     }
 
     footer .col-md {
